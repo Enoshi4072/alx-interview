@@ -12,7 +12,7 @@ def pascal_triangle(n):
     If n is less than or equal to 0, an empty list is returned.
     """
     
-    if n <= 0:
+    if type(n) is not int or n <= 0:
         return []
 
     triangle = [[1]]
