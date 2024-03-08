@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Working to forma a pascals triangle """
 def pascal_triangle(n):
     """
     Generate Pascal's triangle up to the nth row.
