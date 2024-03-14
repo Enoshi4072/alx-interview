@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ Implementing a python function for lock boxes """
 def canUnlockAll(boxes):
     """Determine if all the boxes can be opened.
