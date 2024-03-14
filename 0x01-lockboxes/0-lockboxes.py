@@ -1,24 +1,29 @@
 #!/usr/bin/python3
-""" Implementing a python function for lock boxes """
+""" Implementing lock box algorithm in python """
+
+from collections import deque
+
+
 def canUnlockAll(boxes):
-    """Determine if all the boxes can be opened.
+    """
+    Determine if all the boxes can be opened.
 
     Args:
-        boxes (List[List[int]]): A list of boxes
-        where each box is represented by a list of integers.
+    - boxes (list of list of int): A list of boxes where
+    each box is represented by a list of integers.
 
     Returns:
-        bool: True if all boxes can be opened, False otherwise.
+    - bool: True if all boxes can be opened, False otherwise.
     """
     n = len(boxes)
     visited = [False] * n
     visited[0] = True
 
-    queue = [0]
+    queue = deque([0])
 
     while queue:
-        box = queue.pop(0)
-        for key in boxies[box]:
+        box = queue.popleft()
+        for key in boxes[box]:
             if not visited[key]:
                 visited[key] = True
                 queue.append(key)
