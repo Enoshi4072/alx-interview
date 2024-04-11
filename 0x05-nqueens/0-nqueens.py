@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" Solving the nqueens problem """
 import sys
 
 
