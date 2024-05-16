@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Module for a finding the winner in aprime game """
 
 
 def is_prime(n):
